@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025具身智能高校创客大赛</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ========== Hero Section ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-badge animate-fade-in">湖南移动 &times; 蓝思科技 &times; 中移杭研</div>
+            <h1 class="hero-title animate-slide-up">
+                2025具身智能<br>
+                <span class="text-accent">高校创客大赛</span>
+            </h1>
+            <p class="hero-subtitle animate-slide-up delay-1">让你的机器狗活起来</p>
+            <div class="hero-countdown animate-fade-in delay-2" id="countdown">
+                <p class="countdown-label">距离报名截止</p>
+                <div class="countdown-grid">
+                    <div class="countdown-item">
+                        <span class="countdown-num" id="days">00</span>
+                        <span class="countdown-text">天</span>
+                    </div>
+                    <div class="countdown-sep">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-num" id="hours">00</span>
+                        <span class="countdown-text">时</span>
+                    </div>
+                    <!-- <div class="countdown-sep">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-num" id="minutes">00</span>
+                        <span class="countdown-text">分</span>
+                    </div> -->
+                    <!-- <div class="countdown-sep">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-num" id="seconds">00</span>
+                        <span class="countdown-text">秒</span>
+                    </div> -->
+                </div>
+            </div>
+            <div class="hero-ctas animate-fade-in delay-3">
+                <a href="#register" class="btn btn-primary">立即报名</a>
+                <a href="download\方案书模版.pdf" class="btn btn-outline">下载方案书模板</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ========== 赛事简介 ========== -->
+    <section class="section" id="intro">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">About</span>
+                <h2 class="section-title">赛事简介</h2>
+            </div>
+            <div class="intro-grid reveal delay-1">
+                <div class="intro-text">
+                    <p class="intro-p">
+                        2025具身智能高校创客大赛，由湖南移动、蓝思科技与中移杭研联合主办，面向湖南省内高校，旨在通过最具前沿性的机器狗平台，激发大学生的创新潜能，推动具身智能技术从实验室走向真实场景。
+                    </p>
+                </div>
+                <div class="intro-stats">
+                    <div class="stat-card">
+                        <span class="stat-num">30-40</span>
+                        <span class="stat-label">参赛队伍</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">&yen;10万</span>
+                        <span class="stat-label">最高奖金</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">11月</span>
+                        <span class="stat-label">总决赛</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">2</span>
+                        <span class="stat-label">大赛道</span>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-goals reveal delay-2">
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>推广机器狗应用</h3>
+                    <p>推动具身智能机器狗在真实场景中的落地与创新</p>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3>挖掘创新人才</h3>
+                    <p>发现并培育具身智能领域的下一代创新者</p>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><path d="M6 6h.01"/><path d="M6 18h.01"/></svg>
+                    </div>
+                    <h3>丰富应用生态</h3>
+                    <p>赋能开发者，共建机器狗软硬件生态</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 赛道介绍 ========== -->
+    <section class="section section-dark" id="tracks">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Tracks</span>
+                <h2 class="section-title">赛道介绍</h2>
+            </div>
+
+            <!-- 赛道一 -->
+            <div class="track-card reveal">
+                <div class="track-header">
+                    <div class="track-badge track-1-badge">赛道一</div>
+                    <h3 class="track-name">智能体应用</h3>
+                </div>
+                <div class="track-body">
+                    <div class="track-info">
+                        <p class="track-desc">聚焦于机器狗的智能交互与场景应用。利用大语言模型、情感识别、多模态感知等技术，让机器狗成为真正的智能伙伴。</p>
+                        <div class="track-tags">
+                            <span class="tag">大语言模型</span>
+                            <span class="tag">情感识别</span>
+                            <span class="tag">语音交互</span>
+                            <span class="tag">多模态感知</span>
+                        </div>
+                        <div class="track-cases">
+                            <h4>应用案例</h4>
+                            <ul>
+                                <li>情智关怀机器狗</li>
+                                <li>实景故事机</li>
+                                <li>自主巡逻机器狗</li>
+                            </ul>
+                        </div>
+                        <p class="track-audience"><strong>适合人群：</strong>AI爱好者、产品经理型、创意型选手</p>
+                    </div>
+                    <div class="track-preview preview-1">
+                        <div class="preview-orb"></div>
+                        <div class="preview-lines"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 赛道二 -->
+            <div class="track-card reveal delay-1">
+                <div class="track-header">
+                    <div class="track-badge track-2-badge">赛道二</div>
+                    <h3 class="track-name">硬核运控（竞速）</h3>
+                </div>
+                <div class="track-body">
+                    <div class="track-info">
+                        <p class="track-desc">挑战机器狗的运动极限。利用强化学习、SLAM、运动控制等技术，征服楼梯、斜坡、石子路、草地等全地形赛道。</p>
+                        <div class="track-tags">
+                            <span class="tag">强化学习</span>
+                            <span class="tag">SLAM</span>
+                            <span class="tag">运动控制</span>
+                            <span class="tag">仿真迁移</span>
+                        </div>
+                        <div class="track-cases">
+                            <h4>地形类型</h4>
+                            <ul>
+                                <li>楼梯 &middot; 斜坡</li>
+                                <li>石子路 &middot; 草地</li>
+                                <li>瓷砖 &middot; 地毯</li>
+                                <li>障碍区</li>
+                            </ul>
+                        </div>
+                        <p class="track-audience"><strong>适合人群：</strong>算法控、ROS玩家、机器人竞赛老手</p>
+                    </div>
+                    <div class="track-preview preview-2">
+                        <div class="preview-terrain"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 参赛支持 ========== -->
+    <section class="section" id="support">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Support</span>
+                <h2 class="section-title">参赛支持</h2>
+                <p class="section-subtitle">降低参赛门槛，让每个团队都能专注于创新</p>
+            </div>
+            <div class="support-grid reveal delay-1">
+                <div class="support-card">
+                    <div class="support-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><path d="M6 6h.01"/><path d="M6 18h.01"/></svg></div>
+                    <h3>设备支持</h3>
+                    <p>主办方提供 <strong>40台实体机器狗</strong>，无需自备硬件</p>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg></div>
+                    <h3>仿真平台</h3>
+                    <p>中移杭研提供仿真环境，支持远程开发调试</p>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15l3-3 3 3"/></svg></div>
+                    <h3>开放能力</h3>
+                    <p>音视频流 &middot; 运动控制 &middot; 语音交互 &middot; 雷达建图 &middot; 大模型API</p>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
+                    <h3>技术文档</h3>
+                    <p>BOM表 &middot; SDK说明 &middot; 接口文档 &middot; URDF文件全面开放</p>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <h3>培训答疑</h3>
+                    <p>基础培训 + 安全培训 + 每周线上答疑 + 工程师驻场支持</p>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                    <h3>调试场地</h3>
+                    <p>湖南具身智能创新中心提供含全地形赛道的调试场地</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 时间轴 ========== -->
+    <section class="section section-dark" id="timeline">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Timeline</span>
+                <h2 class="section-title">赛事时间轴</h2>
+            </div>
+            <div class="timeline reveal delay-1">
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">6月</span>
+                        <h4>开放报名</h4>
+                        <p>赛事启动，团队报名通道开启</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">7月30日</span>
+                        <h4>报名截止</h4>
+                        <p>方案书提交截止，入围评选</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">8月1日</span>
+                        <h4>入围公布</h4>
+                        <p>公布入围团队名单</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">8月10-20日</span>
+                        <h4>集中培训</h4>
+                        <p>基础培训 + 安全培训 + 平台熟悉</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">8-11月</span>
+                        <h4>开发阶段</h4>
+                        <p>团队自主开发 + 工程师支持</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">11月底</span>
+                        <h4>总决赛</h4>
+                        <p>线下总决赛，巅峰对决</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 奖项设置 ========== -->
+    <section class="section" id="awards">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Awards</span>
+                <h2 class="section-title">奖项设置</h2>
+            </div>
+
+            <!-- 赛道一奖项 -->
+            <div class="awards-group reveal">
+                <h3 class="awards-group-title">
+                    <span class="track-1-badge track-badge-small">赛道一</span>
+                    智能体应用
+                </h3>
+                <div class="awards-grid">
+                    <div class="award-card gold">
+                        <div class="award-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                        <div class="award-rank">一等奖</div>
+                        <div class="award-qty">1名</div>
+                        <div class="award-prize">5万元</div>
+                        <ul class="award-perks">
+                            <li>证书</li>
+                            <li>蓝思实习直通卡</li>
+                            <li>基金对接</li>
+                        </ul>
+                    </div>
+                    <div class="award-card silver">
+                        <div class="award-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                        <div class="award-rank">二等奖</div>
+                        <div class="award-qty">前20%</div>
+                        <div class="award-prize">1.5万元</div>
+                        <ul class="award-perks">
+                            <li>证书</li>
+                            <li>优先实习</li>
+                            <li>基金对接</li>
+                        </ul>
+                    </div>
+                    <div class="award-card bronze">
+                        <div class="award-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                        <div class="award-rank">三等奖</div>
+                        <div class="award-qty">前40%</div>
+                        <div class="award-prize">1万元</div>
+                        <ul class="award-perks">
+                            <li>证书</li>
+                            <li>优先实习</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="award-special reveal">
+                    <div class="award-special-inner">
+                        <span class="special-label">单项奖</span>
+                        <span class="special-qty">3名</span>
+                        <span class="special-prize">各 5,000元</span>
+                        <span class="special-cats">最佳创意 / 最佳技术 / 最具家庭价值</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 赛道二奖项 -->
+            <div class="awards-group reveal delay-1">
+                <h3 class="awards-group-title">
+                    <span class="track-2-badge track-badge-small">赛道二</span>
+                    硬核运控（竞速）
+                </h3>
+                <div class="awards-grid">
+                    <div class="award-card gold">
+                        <div class="award-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                        <div class="award-rank">一等奖</div>
+                        <div class="award-qty">1名</div>
+                        <div class="award-prize">10万元</div>
+                        <ul class="award-perks">
+                            <li>证书</li>
+                            <li>蓝思实习直通卡</li>
+                            <li>基金对接</li>
+                        </ul>
+                    </div>
+                    <div class="award-card silver">
+                        <div class="award-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                        <div class="award-rank">二等奖</div>
+                        <div class="award-qty">前20%</div>
+                        <div class="award-prize">3万元</div>
+                        <ul class="award-perks">
+                            <li>证书</li>
+                            <li>优先实习</li>
+                            <li>基金对接</li>
+                        </ul>
+                    </div>
+                    <div class="award-card bronze">
+                        <div class="award-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                        <div class="award-rank">三等奖</div>
+                        <div class="award-qty">前40%</div>
+                        <div class="award-prize">1.5万元</div>
+                        <ul class="award-perks">
+                            <li>证书</li>
+                            <li>优先实习</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 评审维度 ========== -->
+    <section class="section section-dark" id="judging">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Criteria</span>
+                <h2 class="section-title">评审维度</h2>
+            </div>
+            <div class="judging-grid reveal">
+                <div class="judging-card">
+                    <h3><span class="track-1-badge track-badge-small">赛道一</span> 智能体应用</h3>
+                    <div class="judging-bars">
+                        <div class="judging-bar-item">
+                            <div class="bar-label"><span>用户接受度</span><span>30%</span></div>
+                            <div class="bar-track"><div class="bar-fill" style="--w: 30%"></div></div>
+                        </div>
+                        <div class="judging-bar-item">
+                            <div class="bar-label"><span>创新性</span><span>30%</span></div>
+                            <div class="bar-track"><div class="bar-fill" style="--w: 30%"></div></div>
+                        </div>
+                        <div class="judging-bar-item">
+                            <div class="bar-label"><span>技术稳定性</span><span>30%</span></div>
+                            <div class="bar-track"><div class="bar-fill" style="--w: 30%"></div></div>
+                        </div>
+                        <div class="judging-bar-item">
+                            <div class="bar-label"><span>市场潜力</span><span>10%</span></div>
+                            <div class="bar-track"><div class="bar-fill" style="--w: 10%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="judging-card">
+                    <h3><span class="track-2-badge track-badge-small">赛道二</span> 硬核运控</h3>
+                    <div class="judging-bars">
+                        <div class="judging-bar-item">
+                            <div class="bar-label"><span>赛道完成度</span><span>30%</span></div>
+                            <div class="bar-track"><div class="bar-fill" style="--w: 30%"></div></div>
+                        </div>
+                        <div class="judging-bar-item">
+                            <div class="bar-label"><span>过程稳定度</span><span>25%</span></div>
+                            <div class="bar-track"><div class="bar-fill" style="--w: 25%"></div></div>
+                        </div>
+                        <div class="judging-bar-item">
+                            <div class="bar-label"><span>运动流畅性</span><span>25%</span></div>
+                            <div class="bar-track"><div class="bar-fill" style="--w: 25%"></div></div>
+                        </div>
+                        <div class="judging-bar-item">
+                            <div class="bar-label"><span>完赛用时</span><span>20%</span></div>
+                            <div class="bar-track"><div class="bar-fill" style="--w: 20%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 报名入口 ========== -->
+    <section class="section" id="register">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Register</span>
+                <h2 class="section-title">报名入口</h2>
+                <p class="section-subtitle">报名截止：<strong>2025年7月30日</strong></p>
+            </div>
+            <div class="register-form reveal delay-1">
+                <form id="registration-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="team-name">队伍名称</label>
+                            <input type="text" id="team-name" required placeholder="给你的队伍取个名字">
+                        </div>
+                        <div class="form-group">
+                            <label for="school">学校</label>
+                            <input type="text" id="school" required placeholder="所在院校">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="track">选择赛道</label>
+                            <select id="track" required>
+                                <option value="">请选择赛道</option>
+                                <option value="track1">赛道一：智能体应用</option>
+                                <option value="track2">赛道二：硬核运控（竞速）</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">联系方式</label>
+                            <input type="tel" id="phone" required placeholder="手机号码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" required placeholder="常用邮箱地址">
+                    </div>
+                    <div class="form-group">
+                        <label for="members">成员信息</label>
+                        <textarea id="members" rows="3" placeholder="请填写所有成员姓名、学校及专业（建议2-5人组队）"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="advisor">指导老师（可选）</label>
+                        <input type="text" id="advisor" placeholder="指导老师姓名">
+                    </div>
+                    <div class="form-group">
+                        <label for="proposal">方案书上传（支持PDF/DOC）</label>
+                        <div class="file-upload" id="file-drop">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                            <p>拖拽文件到此处或点击上传</p>
+                            <input type="file" id="proposal" accept=".pdf,.doc,.docx" hidden>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">提交报名</button>
+                </form>
+                <div class="register-note">
+                    <p>提交后，方案书及报名信息将由组委会审核，入围结果将在 <strong>8月1日</strong> 以邮件形式通知。</p>
+                    <p><a href="#download" class="link-accent">下载方案书模板 &rarr;</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section section-dark" id="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">常见问题</h2>
+            </div>
+            <div class="faq-list reveal delay-1">
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0">
+                        <span>必须会写代码才能参加吗？</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>赛道一（智能体应用）偏创意方向，门槛较低，适合跨专业团队；赛道二（硬核运控）则建议具备一定编程基础。欢迎各专业同学组队互补！</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0">
+                        <span>需要自己购买机器狗吗？</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>不需要！主办方提供40台实体机器狗供参赛团队在指定场地使用。同时中移杭研提供仿真平台，支持远程开发和调试。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0">
+                        <span>非计算机专业可以参加吗？</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>完全可以！我们鼓励跨专业组队，融合人工智能、机械、设计、产品等多学科背景。赛道一尤其欢迎创意型选手参与。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0">
+                        <span>一个人参赛还是组队？</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>建议2-5人组队参赛，鼓励多学科背景互补，提升作品的完整度和创新性。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0">
+                        <span>机器狗可以带走吗？</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>机器狗统一在指定调试场地使用和管理，不可带走。我们提供充足的场地时间供团队开发和测试。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0">
+                        <span>异地学生如何参与？</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>仿真平台支持远程开发和调试。实体调试阶段需到现场——湖南具身智能创新中心。建议合理安排行程。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0">
+                        <span>机器狗损坏怎么办？</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>非人为损坏由主办方负责维修；恶意损坏需按成本赔偿。请规范操作，爱护设备。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 下载中心 ========== -->
+    <section class="section" id="download">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Downloads</span>
+                <h2 class="section-title">下载中心</h2>
+            </div>
+            <div class="download-grid reveal delay-1">
+                <a href="#" class="download-item">
+                    <div class="download-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15l3-3 3 3"/></svg></div>
+                    <span>创意方案书模板（Word）</span>
+                </a>
+                <a href="#" class="download-item">
+                    <div class="download-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15l3-3 3 3"/></svg></div>
+                    <span>赛事章程完整版（PDF）</span>
+                </a>
+                <a href="#" class="download-item">
+                    <div class="download-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15l3-3 3 3"/></svg></div>
+                    <span>技术文档包（SDK/接口文档）</span>
+                </a>
+                <a href="#" class="download-item">
+                    <div class="download-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15l3-3 3 3"/></svg></div>
+                    <span>评审标准表（PDF）</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 主办方/Footer ========== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>2025具身智能高校创客大赛</h3>
+                    <p>让创新改变未来</p>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <span>competition@example.com</span>
+                    </div>
+                    <div class="footer-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                        <span>赛事咨询热线</span>
+                    </div>
+                    <div class="footer-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>湖南具身智能创新中心</span>
+                    </div>
+                </div>
+                <div class="footer-logos">
+                    <span class="footer-logo-item">湖南移动</span>
+                    <span class="footer-logo-sep">&times;</span>
+                    <span class="footer-logo-item">蓝思科技</span>
+                    <span class="footer-logo-sep">&times;</span>
+                    <span class="footer-logo-item">中移杭研</span>
+                </div>
+                <div class="footer-social">
+                    <span class="footer-social-label">微信公众号 / 视频号</span>
+                    <div class="footer-qr-placeholder">二维码</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 湖南移动-蓝思科技-中移杭研 联合主办</p>
+                <div class="footer-links">
+                    <a href="#">隐私政策</a>
+                    <a href="#">友情链接</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
